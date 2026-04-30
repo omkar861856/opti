@@ -34,13 +34,6 @@ body {
     margin-bottom: 20px;
 }
 
-.extra-banners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
 .site-layout {
     display: flex;
     width: 100%;
@@ -69,7 +62,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     background: var(--card-bg);
     padding: 4rem;
     border-radius: 40px;
@@ -95,29 +88,37 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-header p { color: #94a3b8; margin-bottom: 2rem; }
+header p { color: #94a3b8; margin-bottom: 2rem; font-size: 1.1rem; }
 
 .drop-zone {
     border: 2px dashed var(--border);
-    border-radius: 24px;
-    padding: 5rem;
+    border-radius: 30px;
+    padding: 6rem;
     cursor: pointer;
     transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.02);
     margin-bottom: 2rem;
 }
 
-.drop-zone:hover { border-color: var(--primary); background: rgba(59, 130, 246, 0.05); }
+.drop-zone:hover { border-color: var(--primary); background: rgba(59, 130, 246, 0.05); transform: scale(1.01); }
 
 .preview-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 2.5rem;
+    gap: 40px;
+    margin-bottom: 3rem;
+}
+
+.preview-box {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 24px;
+    border: 1px solid var(--border);
 }
 
 .preview-box img {
     width: 100%;
-    height: 400px;
+    max-height: 400px;
     object-fit: contain;
     border-radius: 12px;
 }
@@ -133,6 +134,8 @@ header p { color: #94a3b8; margin-bottom: 2rem; }
     cursor: pointer;
     transition: all 0.3s;
 }
+
+.action-btn:hover { background: var(--primary-hover); transform: translateY(-3px); }
 
 .seo-about { text-align: left; margin-top: 4rem; color: #94a3b8; border-top: 1px solid var(--border); padding-top: 2rem; }
 .related-tools { margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.03); border-radius: 20px; }
