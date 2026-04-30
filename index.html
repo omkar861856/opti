@@ -27,102 +27,106 @@
     </script>
 </head>
 <body>
-    <!-- Top Horizontal Banner (Width > Height) -->
-    <div class="ad-top">
+    <!-- TOP HORIZONTAL AD -->
+    <div class="ad-top-wrapper">
         <script type="text/javascript">
             atOptions = { 'key' : '0c617cf48f239b352de5d3d21ca568c1', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
         </script>
         <script type="text/javascript" src="//www.highperformanceformat.com/0c617cf48f239b352de5d3d21ca568c1/invoke.js"></script>
     </div>
 
-    <div class="page-wrapper">
-        <!-- Left Vertical Skyscraper (Height > Width) -->
-        <div class="ad-side">
-            <script type="text/javascript">
-                atOptions = { 'key' : 'fe1b29a5fc5ac9bc1abadb855ecc5771', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/fe1b29a5fc5ac9bc1abadb855ecc5771/invoke.js"></script>
-        </div>
+    <div class="site-layout">
+        <!-- LEFT VERTICAL AD -->
+        <aside class="ad-sidebar left">
+            <div class="ad-unit">
+                <script type="text/javascript">
+                    atOptions = { 'key' : 'fe1b29a5fc5ac9bc1abadb855ecc5771', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/fe1b29a5fc5ac9bc1abadb855ecc5771/invoke.js"></script>
+            </div>
+        </aside>
 
-        <div class="main-container">
-            <header>
-                <h1>Ecotron Opti</h1>
-                <p>High-quality image optimization, right in your browser.</p>
-            </header>
+        <!-- MAIN TOOL SECTION (70% Width) -->
+        <main class="tool-center-stage">
+            <div class="main-container">
+                <header>
+                    <h1>Ecotron Opti</h1>
+                    <p>High-quality image optimization, right in your browser.</p>
+                </header>
 
-            <main>
-                <div class="drop-zone" id="drop-zone">
-                    <div class="icon">📁</div>
-                    <p>Drag & drop JPEG images here or <span class="browse">browse</span></p>
-                    <input type="file" id="file-input" accept="image/jpeg" hidden>
-                </div>
-
-                <div id="editor" class="editor hidden">
-                    <div class="preview-container">
-                        <div class="preview-box">
-                            <span>Original</span>
-                            <img id="original-preview">
-                            <span id="original-size" class="size-tag"></span>
-                        </div>
-                        <div class="preview-box">
-                            <span>Compressed</span>
-                            <img id="compressed-preview">
-                            <span id="compressed-size" class="size-tag"></span>
-                        </div>
+                <div class="tool-content">
+                    <div class="drop-zone" id="drop-zone">
+                        <div class="icon">📁</div>
+                        <p>Drag & drop JPEG images here or <span class="browse">browse</span></p>
+                        <input type="file" id="file-input" accept="image/jpeg" hidden>
                     </div>
 
-                    <div class="controls">
-                        <div class="slider-group">
-                            <label>Quality: <span id="quality-val">80</span>%</label>
-                            <input type="range" id="quality-slider" min="1" max="100" value="80">
+                    <div id="editor" class="editor hidden">
+                        <div class="preview-container">
+                            <div class="preview-box">
+                                <span>Original</span>
+                                <img id="original-preview">
+                                <span id="original-size" class="size-tag"></span>
+                            </div>
+                            <div class="preview-box">
+                                <span>Compressed</span>
+                                <img id="compressed-preview">
+                                <span id="compressed-size" class="size-tag"></span>
+                            </div>
                         </div>
-                        <button id="download-btn" class="action-btn">Download Compressed Image</button>
+
+                        <div class="controls">
+                            <div class="slider-group">
+                                <label>Quality: <span id="quality-val">80</span>%</label>
+                                <input type="range" id="quality-slider" min="1" max="100" value="80">
+                            </div>
+                            <button id="download-btn" class="action-btn">Download Compressed Image</button>
+                        </div>
                     </div>
                 </div>
 
-                <article style="text-align: left; margin-top: 3rem; color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-                    <h3 style="color: var(--text); margin-bottom: 1rem;">About Ecotron Opti</h3>
-                    <p>Ecotron Opti processes your images locally in your browser. This means your photos are never uploaded to a server, ensuring 100% data security.</p>
+                <article class="seo-about">
+                    <h3>About Ecotron Opti</h3>
+                    <p>Ecotron Opti processes your images locally in your browser. This means your photos are never uploaded to a server, ensuring 100% data security. It's the perfect free alternative to TinyPNG.</p>
                 </article>
-            </main>
 
-            <footer>
-                <div style="margin: 2rem 0; padding-top: 1rem; border-top: 1px solid var(--border);">
-                    <p style="margin-bottom: 10px; font-weight: 600;">Try our other tools:</p>
-                    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; font-size: 0.8rem;">
-                        <a href="https://time.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Time</a>
-                        <a href="https://sleep.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Sleep</a>
-                        <a href="https://lexi.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Lexi</a>
-                        <a href="https://whisper.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Whisper</a>
-                        <a href="https://spin.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Spin</a>
-                    </div>
+                <div class="related-tools">
+                    <p>Try our other tools:</p>
+                    <nav>
+                        <a href="https://time.ecotron.co.in">Time</a>
+                        <a href="https://sleep.ecotron.co.in">Sleep</a>
+                        <a href="https://lexi.ecotron.co.in">Lexi</a>
+                        <a href="https://whisper.ecotron.co.in">Whisper</a>
+                        <a href="https://spin.ecotron.co.in">Spin</a>
+                    </nav>
                 </div>
-                <p>&copy; 2026 Ecotron Infrastructure</p>
-            </footer>
-        </div>
+                <div class="copyright">&copy; 2026 Ecotron Infrastructure</div>
+            </div>
+        </main>
 
-        <!-- Right Vertical Skyscraper (Height > Width) -->
-        <div class="ad-side">
-            <script type="text/javascript">
-                atOptions = { 'key' : 'ddf55dad83e6db9966289a8c2afdb16e', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/ddf55dad83e6db9966289a8c2afdb16e/invoke.js"></script>
-
-            <div style="margin-top: 20px;">
+        <!-- RIGHT VERTICAL AD -->
+        <aside class="ad-sidebar right">
+            <div class="ad-unit">
+                <script type="text/javascript">
+                    atOptions = { 'key' : 'ddf55dad83e6db9966289a8c2afdb16e', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/ddf55dad83e6db9966289a8c2afdb16e/invoke.js"></script>
+            </div>
+            <div class="ad-unit" style="margin-top: 20px;">
                 <script type="text/javascript">
                     atOptions = { 'key' : '80e8b5b78c5996aa24342536dbecc6fc', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
                 </script>
                 <script type="text/javascript" src="//www.highperformanceformat.com/80e8b5b78c5996aa24342536dbecc6fc/invoke.js"></script>
             </div>
-        </div>
+        </aside>
     </div>
 
-    <!-- Bottom Horizontal Banners (Width > Height) -->
-    <div class="ad-bottom" style="flex-direction: column; gap: 20px;">
+    <!-- BOTTOM HORIZONTAL ADS -->
+    <div class="ad-bottom-wrapper">
         <script async="async" data-cfasync="false" src="https://developdomicile.com/dd3bda52cd277d6415e70a53f74e0de5/invoke.js"></script>
         <div id="container-dd3bda52cd277d6415e70a53f74e0de5"></div>
 
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div class="extra-banners">
             <script type="text/javascript">
                 atOptions = { 'key' : '8c01837a8fad8aee12e599adcde65c69', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
             </script>
