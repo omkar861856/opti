@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecotron Opti | Smart Image Compression</title>
+    <meta name="description" content="Compress your JPEG images instantly in your browser. Fast, private, and professional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ecotron Opti</h1>
+            <p>High-quality image optimization, right in your browser.</p>
+        </header>
+
+        <main>
+            <div class="drop-zone" id="drop-zone">
+                <div class="icon">📁</div>
+                <p>Drag & drop JPEG images here or <span class="browse">browse</span></p>
+                <input type="file" id="file-input" accept="image/jpeg" hidden>
+            </div>
+
+            <div id="editor" class="editor hidden">
+                <div class="preview-container">
+                    <div class="preview-box">
+                        <span>Original</span>
+                        <img id="original-preview">
+                        <span id="original-size" class="size-tag"></span>
+                    </div>
+                    <div class="preview-box">
+                        <span>Compressed</span>
+                        <img id="compressed-preview">
+                        <span id="compressed-size" class="size-tag"></span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="slider-group">
+                        <label>Quality: <span id="quality-val">80</span>%</label>
+                        <input type="range" id="quality-slider" min="1" max="100" value="80">
+                    </div>
+                    <button id="download-btn" class="action-btn">Download Compressed Image</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Your images are processed locally and never uploaded to our servers.</p>
+            <p>&copy; 2026 Ecotron Infrastructure</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
