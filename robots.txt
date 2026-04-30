@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://opti.ecotron.co.in/sitemap.xml
